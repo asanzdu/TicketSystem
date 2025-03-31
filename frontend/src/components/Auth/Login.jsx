@@ -17,13 +17,13 @@ const Login = () => {
 
         setError('');
         console.log('Inicio de sesión:', { email, password });
-        // Aquí iría la lógica para enviar la petición de inicio de sesión al backend
+        // inicio de sesión backend
     };
 
     return (
         <div className="flex justify-center items-center min-h-screen bg-[#2c9add] p-6">
             <div className="bg-white shadow-lg rounded-lg w-full max-w-4xl flex flex-col md:flex-row">
-                {/* Sección del formulario */}
+                {/* formulario */}
                 <div className="w-full md:w-1/2 p-10 flex flex-col justify-center">
                     <h2 className="text-3xl font-bold text-gray-700 mb-6">Bienvenido 💻</h2>
                     {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
