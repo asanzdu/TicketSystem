@@ -11,19 +11,15 @@ const ForgotPassword = () => {
         setError(null);
 
         try {
-            // Simulación de llamada a la API (reemplaza con tu llamada real)
+            // API
             setTimeout(() => {
-                // Simulación de respuesta exitosa
+                // FUnciona
                 if (email) {
                     setMessage('Se ha enviado un correo de recuperación a su dirección.');
                 } else {
                     setError('Por favor ingrese un correo electronico.');
                 }
-            }, 1000); // Simula 1 segundo de espera
-            // En una implementación real, aquí harías la llamada a tu API
-            // const response = await fetch('/api/forgot-password', { ... });
-            // const data = await response.json();
-            // if (response.ok) { setMessage(data.message); } else { setError(data.error); }
+            }, 1000); 
         } catch (err) {
             setError('Error de red. Inténtelo de nuevo.');
         }
